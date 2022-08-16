@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  color: #3e4794;
+  font-family: "Roboto", sans-serif;
+}
+
+body::before {
+  content: url(../images/backcover.svg);
+  position: fixed;
+  right: 400px;
+  top: 0;
+  width: 500px;
+  z-index: -1;
+  transform: scale(1);
+}
+
+.main-div {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-block: 50px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-inline: 40px;
+  font-size: 1.5rem;
+}
+
+.intro-section {
+  display: flex;
+  max-width: 100%;
+}
+
+.left-section {
+  flex: 1;
+  margin-left: 150px;
+}
+
+.left-section h1 {
+  font-size: 5rem;
+  margin-top: 150px;
+}
+
+.left-section h4 {
+  font-size: 1rem;
+  margin-top: 50px;
+  width: 300px;
+  font-weight: 100;
+  line-height: 22px;
+  color: rgb(141, 139, 139);
+}
+
+.imgs-div {
+  flex: 2;
+}
+
+.learn-more-btn,
+.signin-btn {
+  color: #fff;
+  font-size: 2rem;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-top: 100px;
+  background: linear-gradient(to right, #9979f2, #f288db);
+}
+
+.signin-btn {
+  margin-top: 0;
+  font-size: 1.3rem;
+  padding: 0 30px;
+}
